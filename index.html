@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Cadastrar Prato</title>
+    <link rel="stylesheet" href="css/estilo.css"/>
+    <link rel="icon" type="image/png" href="assets/img/icon-pag.png">
+</head>
+<body>
+    <div class="card">
+        <div class="coluna-imagem">
+            <!-- decorativo isso aqui -->
+            <div class="caixa-imagem">
+                <img src="assets/img/img_pendente.webp" alt="aaaaaaaaaaa">
+            </div>
+            <button type="button" class="botao-imagem">Adicionar imagem</button>     
+        </div>
+
+        <form class="coluna-formulario">
+            <h1 class="titulo">Cadastrar Prato</h1>
+            <input name="nome" type="text" placeholder="Nome do prato" class="campo campo-largo"/>
+
+            <div class="linha">
+                <select name="categoria" class="campo">
+                    <option selected disabled>Categoria</option>
+                    <option>Entrada</option>
+                    <option>Prato principal</option>
+                    <option>Sobremesa</option>
+                    <option>Acompanhamento</option>
+                    <option>Porção</option>
+                    <option>Lanche</option>
+                </select>
+
+                <input name="preco" type="number" placeholder="Preço" class="campo"/>
+            </div>
+
+            <input type="text" placeholder="Código" class="campo campo-largo" disabled/>
+
+            <h2 class="subtitulo">Porção</h2>
+
+            <label class="opcao">
+                <input type="radio" name="porcao" checked/>
+                Individual
+            </label>
+            <label class="opcao">
+                <input type="radio" name="porcao"/>
+                Duas pessoas
+            </label>
+            <label class="opcao">
+                <input type="radio" name="porcao"/>
+                Compartilhar
+            </label>
+
+            <textarea name="descricao" placeholder="Adicione uma descrição" class="campo campo-largo descricao"></textarea>
+
+            <h2 class="subtitulo">Tags</h2>
+            <div class="grade-tags">
+                <label class="opcao">
+                    <input checked  type="checkbox"/>
+                    Novidade
+                </label>
+                <label class="opcao">
+                    <input type="checkbox"/>
+                    Vegetariano
+                </label>
+                <label class="opcao">
+                    <input type="checkbox"/>
+                    Sem glúten
+                </label>
+                <label class="opcao">
+                    <input type="checkbox"/>
+                    Prato executivo
+                </label>
+                <label class="opcao">
+                    <input type="checkbox"/>
+                    Picante
+                </label>
+                <label class="opcao">
+                    <input type="checkbox"/>
+                    Mais vendido
+                </label>
+            </div>
+
+            <div class="rodape">
+                <button type="reset" class="botao botao-cancelar">Cancelar</button>
+                <button type="submit" class="botao botao-salvar">Salvar</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
+
